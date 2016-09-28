@@ -12,3 +12,10 @@ def array_sum(array)
 
 end
 
+def find_item?(array, item_to_find)
+  for item in array
+    return true if (item.downcase == item_to_find.downcase)
+  end
+  false
+end
+
