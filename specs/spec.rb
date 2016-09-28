@@ -26,5 +26,16 @@ def test_find_item?
   assert_equal( false, item_in_array )
 end
 
+def test_first_key
+  teacher_wallets = {
+    'Sandy' => 12,
+    'Zsolt'  => 10,
+    'Val'  => 1356,
+    'Jay' => 1
+  }
+  first_key_result = first_key(teacher_wallets)
+  assert_equal( 'Sandy', first_key_result )
+end
+
 
 end
