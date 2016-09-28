@@ -12,6 +12,11 @@ def test_arrays_length
   assert_equal( 8, length_result )
 end
 
+def test_array_sum
+  data = [ 1, 2, 3, 4, 5 ]
+  sum_result = array_sum(data)
+  assert_equal( 15, sum_result )
+end
 
 
 
